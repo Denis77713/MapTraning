@@ -463,6 +463,10 @@ document.querySelector(".clear").addEventListener("click", function () {
 });
 const minus =  document.querySelector(".minus")
 const sidebar =  document.querySelector(".sidebar")
+const formss = document.querySelector(".form")
+const maping = document.querySelector("#map")
+const formBtn = document.querySelector(".form__btn")
+
 let tumbler = false
 minus.addEventListener("click",function(){
   tumbler = !tumbler
@@ -477,4 +481,14 @@ minus.addEventListener("click",function(){
   console.log(sidebar.classList)
   
   
+})
+maping.addEventListener("click",function(){
+  tumbler = !tumbler
+  sidebar.classList.add("active-window")
+  minus.classList.add("minus-active")
+})
+formBtn.addEventListener("click",function(){
+  tumbler = !tumbler
+  sidebar.classList.remove("active-window")
+  minus.classList.remove("minus-active")
 })

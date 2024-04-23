@@ -461,3 +461,20 @@ document.querySelector(".clear").addEventListener("click", function () {
   }
   demo.arrClear();
 });
+const minus =  document.querySelector(".minus")
+const sidebar =  document.querySelector(".sidebar")
+let tumbler = false
+minus.addEventListener("click",function(){
+  tumbler = !tumbler
+  if(tumbler){
+    sidebar.classList.add("active-window")
+    minus.classList.add("minus-active")
+    
+  }else{
+    sidebar.classList.remove("active-window")
+    minus.classList.remove("minus-active")
+  }
+  console.log(sidebar.classList)
+  
+  
+})

@@ -285,3 +285,13 @@ a:visited {
   right: 0;
   bottom: 0;
 }
+@media (max-width: 1200px){
+  body{
+    flex-direction: column;
+  }
+  .sidebar{
+    height: 10px !important;
+  }
+#map{
+}
+}

@@ -285,13 +285,37 @@ a:visited {
   right: 0;
   bottom: 0;
 }
+.minus{
+  max-width: 15px;
+  display: none;
+}
 @media (max-width: 1200px){
-  body{
-    flex-direction: column;
+  .sidebar{
+    padding: 10px;
+  }
+  .header{
+    font-size: 20px;
+  }
+ body{
+    display: block;
+    padding: 0;
   }
   .sidebar{
-    height: 10px !important;
+    height: 120px;
+    width: 100%;
+    position: absolute;
   }
-#map{
+  .minus{
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: rotate(-90deg);
+  }
 }
+.minus-active{
+  transform: rotate(0deg);
+  
+}
+.active-window{
+  height: 800px;
 }
